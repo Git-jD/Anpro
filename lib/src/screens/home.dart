@@ -52,7 +52,7 @@ class _HomeState extends State<Home> {
                     blurRadius: 4)
               ]),
               child: ListTile(
-                trailing: Icon(Icons.search),
+                leading: Icon(Icons.search),
               ),
             )
           ],
