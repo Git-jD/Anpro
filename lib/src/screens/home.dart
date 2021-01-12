@@ -11,6 +11,11 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: white,
+      body: ListView(
+        children: <Widget>[
+          Text("What would you like to eat?", style: TextStyle(fontSize: 18))
+        ],
+      ),
     );
   }
 }
