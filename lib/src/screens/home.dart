@@ -52,8 +52,14 @@ class _HomeState extends State<Home> {
                     blurRadius: 4)
               ]),
               child: ListTile(
-                leading: Icon(Icons.search),
-              ),
+                  leading: Icon(
+                    Icons.search,
+                    color: red,
+                  ),
+                  trailing: Icon(
+                    Icons.filter_list,
+                    color: red,
+                  )),
             )
           ],
         ),
