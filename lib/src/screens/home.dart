@@ -56,6 +56,11 @@ class _HomeState extends State<Home> {
                     Icons.search,
                     color: red,
                   ),
+                  title: TextField(
+                    decoration: InputDecoration(
+                        hintText: "find food and restaurent",
+                        border: InputBorder.none),
+                  ),
                   trailing: Icon(
                     Icons.filter_list,
                     color: red,
