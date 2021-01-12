@@ -23,8 +23,22 @@ class _HomeState extends State<Home> {
                   child: Text("What would you like to eat?",
                       style: TextStyle(fontSize: 18)),
                 ),
-                IconButton(
-                    icon: Icon(Icons.notifications_none), onPressed: () {})
+                Stack(
+                  children: <Widget>[
+                    IconButton(
+                        icon: Icon(Icons.notifications_none), onPressed: () {}),
+                    Positioned(
+                        top: 12,
+                        right: 12,
+                        child: Container(
+                          height: 10,
+                          width: 10,
+                          decoration: BoxDecoration(
+                              color: red,
+                              borderRadius: BorderRadius.circular(20)),
+                        ))
+                  ],
+                )
               ],
             )
           ],
