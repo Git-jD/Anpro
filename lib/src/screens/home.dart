@@ -40,6 +40,20 @@ class _HomeState extends State<Home> {
                   ],
                 )
               ],
+            ),
+            SizedBox(
+              height: 5,
+            ),
+            Container(
+              decoration: BoxDecoration(color: white, boxShadow: [
+                BoxShadow(
+                    color: Colors.grey[300],
+                    offset: Offset(1, 1),
+                    blurRadius: 4)
+              ]),
+              child: ListTile(
+                trailing: Icon(Icons.search),
+              ),
             )
           ],
         ),
