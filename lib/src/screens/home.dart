@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/commons.dart';
+import '../widgets/title.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -19,10 +20,11 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text("What would you like to eat?",
-                      style: TextStyle(fontSize: 18)),
-                ),
+                    padding: const EdgeInsets.all(8.0),
+                    child: CustomText(
+                      text: "What are you looking for?",
+                      size: 18,
+                    )),
                 Stack(
                   children: <Widget>[
                     IconButton(
