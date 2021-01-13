@@ -75,7 +75,130 @@ class _HomeState extends State<Home> {
             SizedBox(
               height: 5,
             ),
-            Categories()
+            Categories(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: CustomText(
+                text: "Featured",
+                size: 20,
+                colors: grey,
+              ),
+            ),
+            Container(
+              height: 220,
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 2,
+                  itemBuilder: (_, index) {
+                    return Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        height: 240,
+                        width: 200,
+                        decoration: BoxDecoration(color: white, boxShadow: [
+                          BoxShadow(
+                              color: Colors.grey[300],
+                              offset: Offset(1, 1),
+                              blurRadius: 4)
+                        ]),
+                        child: Column(
+                          children: <Widget>[
+                            Image.asset(
+                              "images/Food2.png",
+                              height: 110,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                Padding(
+                                    padding: const EdgeInsets.all(8),
+                                    child: CustomText(
+                                      text: "Some food",
+                                      size: 16,
+                                    )),
+                                Padding(
+                                  padding: const EdgeInsets.all(8),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(20),
+                                        color: white,
+                                        boxShadow: [
+                                          BoxShadow(
+                                              color: Colors.grey[300],
+                                              offset: Offset(1, 1),
+                                              blurRadius: 4)
+                                        ]),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(4),
+                                      child: Icon(
+                                        Icons.favorite_border,
+                                        size: 18,
+                                        color: red,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                Row(
+                                  children: <Widget>[
+                                    Padding(
+                                      padding: EdgeInsets.only(left: 8),
+                                      child: CustomText(
+                                        text: "4.7",
+                                        colors: grey,
+                                        size: 14,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 2,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: red,
+                                      size: 16,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: red,
+                                      size: 16,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: red,
+                                      size: 16,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: red,
+                                      size: 16,
+                                    ),
+                                    Icon(
+                                      Icons.star,
+                                      color: grey,
+                                      size: 16,
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(right: 8),
+                                  child: CustomText(
+                                    text: "\$12.99",
+                                    size: 14,
+                                    weight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  }),
+            )
           ],
         ),
       ),
