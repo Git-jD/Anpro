@@ -74,45 +74,6 @@ class _HomeState extends State<Home> {
             SizedBox(
               height: 5,
             ),
-            Container(
-              height: 120,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: 15,
-                itemBuilder: (_, index) {
-                  return Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      children: <Widget>[
-                        Container(
-                          decoration: BoxDecoration(color: white, boxShadow: [
-                            BoxShadow(
-                                color: Colors.red[50],
-                                offset: Offset(4, 6),
-                                blurRadius: 12)
-                          ]),
-                          child: Padding(
-                            padding: EdgeInsets.all(4),
-                            child: Image.asset(
-                              "images/Food1.jpg",
-                              width: 60,
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        CustomText(
-                          text: "Salad",
-                          size: 14,
-                          colors: black,
-                        )
-                      ],
-                    ),
-                  );
-                },
-              ),
-            ),
           ],
         ),
       ),
