@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/commons.dart';
 import '../widgets/title.dart';
+import '../widgets/categories.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -74,6 +75,7 @@ class _HomeState extends State<Home> {
             SizedBox(
               height: 5,
             ),
+            Categories()
           ],
         ),
       ),

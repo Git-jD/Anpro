@@ -3,7 +3,15 @@ import '../models/category.dart';
 import 'commons.dart';
 import 'title.dart';
 
-List<Category> categoriesList = [Category(name: "Salad", image: "Food1.jpg")];
+List<Category> categoriesList = [
+  Category(name: "Salad", image: "Food1.jpg"),
+  Category(name: "Salad2", image: "Food1.jpg"),
+  Category(name: "Salad3", image: "Food1.jpg"),
+  Category(name: "Salad4", image: "Food1.jpg"),
+  Category(name: "Salad5", image: "Food1.jpg"),
+  Category(name: "Salad6", image: "Food1.jpg"),
+  Category(name: "Salad7", image: "Food1.jpg")
+];
 
 class Categories extends StatelessWidget {
   @override
@@ -12,7 +20,7 @@ class Categories extends StatelessWidget {
       height: 120,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: 15,
+        itemCount: categoriesList.length,
         itemBuilder: (_, index) {
           return Padding(
             padding: const EdgeInsets.all(8.0),
