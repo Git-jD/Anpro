@@ -90,6 +90,29 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
+      bottomNavigationBar: Container(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.all(8),
+              child: Image.asset("images/home.png", width: 36, height: 36),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8),
+              child: Image.asset("images/home.png", width: 36, height: 36),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8),
+              child: Image.asset("images/home.png", width: 36, height: 36),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8),
+              child: Image.asset("images/home.png", width: 36, height: 36),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
